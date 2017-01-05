@@ -49,6 +49,8 @@ articleView.handleMainNav = function() {
   $('.main-nav').on('click', '.tab', function() {
     $('.tab-content').hide();
     $('#' + $(this).data('content')).fadeIn();
+    $('#category-filter').val('');
+    $('#author-filter').val('');
   });
 
   $('.main-nav .tab:first').click(); // Let's now trigger a click on the first .tab element, to set up the page.
